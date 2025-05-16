@@ -4,7 +4,7 @@ export default function HomeScreen() {
       <section>
         <div className="relative w-full h-[500px] bg-black">
           <img
-            src="/dep.jpg"
+            src="/dep.JPG"
             alt="Electric Bike"
             className="w-full h-full object-cover opacity-25"
           />
