@@ -54,7 +54,7 @@ export default function GroodKitPage() {
 
               {/* Enviolo Image Column */}
               <div className="relative mr-12 contain">
-                <img src="/lek.jpg" alt="Electric Bike" className="w-full" />
+                <img src="/lek.JPG" alt="Electric Bike" className="w-full" />
               </div>
             </div>
           </div>
@@ -64,7 +64,7 @@ export default function GroodKitPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Image first in second row */}
               <div className="relative ml-12 md:order-1">
-                <img src="/brang.jpg" alt="Electric Bike" className="w-full" />
+                <img src="/brang.JPG" alt="Electric Bike" className="w-full" />
               </div>
 
               {/* Text second in second row */}
@@ -106,7 +106,7 @@ export default function GroodKitPage() {
 
               {/* Enviolo Image Column */}
               <div className="relative mr-12">
-                <img src="/theak.jpg" alt="Electric Bike" className="w-full" />
+                <img src="/theak.JPG" alt="Electric Bike" className="w-full" />
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@ export default function GroodKitPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Image first in second row */}
               <div className="relative ml-12 md:order-1">
-                <img src="/lamp2.jpg" alt="Electric Bike" className="w-full" />
+                <img src="/lamp2.JPG" alt="Electric Bike" className="w-full" />
               </div>
 
               {/* Text second in second row */}
@@ -158,7 +158,7 @@ export default function GroodKitPage() {
               {/* Enviolo Image Column */}
               <div className="relative mr-12">
                 <img
-                  src="/battery.jpg"
+                  src="/battery.JPG"
                   alt="Electric Bike"
                   className="w-full"
                 />
