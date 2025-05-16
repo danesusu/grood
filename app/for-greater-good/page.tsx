@@ -4,99 +4,80 @@ import { Icon } from "lucide-react";
 
 export default function ForGreaterGoodPage() {
   return (
-    <main className="flex flex-col min-h-screen">
-      <section className="bg-gray-300 py-8 md:py-12">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h2 className="text-3xl font-bold">Environmental Impact</h2>
-              <p className="text-gray-700">
-                Every Grood bike on the road means fewer carbon emissions in our
-                atmosphere. By choosing electric transportation, our riders
-                collectively prevent thousands of tons of CO2 from entering the
-                atmosphere each year.
-              </p>
-              <p className="text-gray-700">
-                We're also committed to sustainable manufacturing practices. Our
-                frames use recycled aluminum where possible, and we're
-                constantly working to reduce waste and energy consumption in our
-                production process.
-              </p>
-            </div>
-            <div>
-              <Image
-                src="/person&bike.jpg"
-                alt="Environmental Impact"
-                width={600}
-                height={500}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+    <div className="bg-blue-50 min-h-screen py-10 px-4 text-center">
+      <h1 className="text-4xl font-bold">
+        Why's <span className="text-primary"> Grood?</span>
+      </h1>
+      <p className="text-gray-700 mt-4 max-w-2xl mx-auto">
+        Grood bikes can effortlessly reach a speed of 32km/h, easily climb the
+        coast or make trips that would be too long to travel with a conventional
+        bike.
+      </p>
 
-      <section className="bg-gray-300 py-8 md:py-12">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-              <Image
-                src="/wow.jpg"
-                alt="Community Programs"
-                width={600}
-                height={500}
-              />
-            </div>
-            <div className="space-y-6">
-              <h2 className="text-3xl font-bold">Community Programs</h2>
-              <p className="text-gray-700">
-                We invest in the communities where our bikes are used. Our Grood
-                Gives Back program donates a portion of every sale to local
-                initiatives focused on sustainable transportation
-                infrastructure.
-              </p>
-              <p className="text-gray-700">
-                We also partner with local organizations to provide bikes to
-                those who need them most. Through our Bikes for All program,
-                we've donated over 500 bikes to low-income families and
-                essential workers.
-              </p>
-            </div>
-          </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+        <div className="flex flex-col items-center">
+          <img
+            src="/bike-b.png"
+            alt="Lithium Battery"
+            className="w-24 h-24 text-primary"
+          />
+          <h2 className="text-xl font-semibold italic mt-4">Lithium Battery</h2>
+          <p className="text-gray-600 italic">1000 cycles of charge</p>
         </div>
-      </section>
+        <div className="flex flex-col items-center">
+          <img
+            src="/battery.png"
+            alt="Range Battery"
+            className="w-24 h-24 text-primary"
+          />
+          <h2 className="text-xl font-semibold italic mt-4">Range Battery</h2>
+          <p className="text-gray-600 italic">40km average</p>
+        </div>
+        <div className="flex flex-col items-center">
+          <img
+            src="/speed.png"
+            alt="Speed"
+            className="w-24 h-24 text-primary"
+          />
+          <h2 className="text-xl font-semibold italic mt-4">Speed</h2>
+          <p className="text-gray-600 italic">32km/h</p>
+        </div>
+      </div>
 
-      <section className="bg-gray-300">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">
-              When you buy a GROOD, you're investing in:
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {[
-              {
-                number: "The peace of mind",
-              },
-              {
-                number: "Local Company",
-              },
-              {
-                number: "Friendly customer service",
-              },
-              {
-                number: "Industry leading one year warranty",
-              },
-            ].map((stat, index) => (
-              <div
-                key={index}
-                className="bg-gray-300 p-6 rounded-lg shadow-sm text-center"
-              >
-                <h5 className="text-3xl  text-gray-700 mb-3">{stat.number}</h5>
-              </div>
-            ))}
-          </div>
+      <h1 className="text-2xl font-bold italic mt-16">
+        When you buy a GROOD, you're investing in:
+      </h1>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 font-bold">
+        <div className="flex flex-col items-center">
+          <img
+            src="/1yearw.png"
+            alt="Warranty"
+            className="w-24 h-24 text-primary"
+          />
+          <p className="text-gray-700 italic mt-4 max-w-xs">
+            The peace of mind of an industry leading one year warranty
+          </p>
         </div>
-      </section>
-    </main>
+        <div className="flex flex-col items-center">
+          <img
+            src="/local-cop.png"
+            alt="Local Company"
+            className="w-24 h-24 text-primary"
+          />
+          <p className="text-gray-700 italic mt-4">Local Company</p>
+        </div>
+        <div className="flex flex-col items-center">
+          <img
+            src="/customer-care.png"
+            alt="Customer Care"
+            className="w-24 h-24 text-primary"
+          />
+          <p className="text-gray-700 italic mt-4 max-w-xs">
+            Friendly customer care that goes the extra mile
+          </p>
+        </div>
+      </div>
+    </div>
   );
 }

@@ -13,7 +13,7 @@ export default function GroodKitPage() {
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center space-y-8">
             <h1 className="text-4xl md:text-5xl font-bold">
-              The <span className="text-amber-500">Grood</span> Kit
+              The <span className="text-primary">Grood</span> Kit
             </h1>
             <p className="text-gray-700 text-lg">
               Hit the streets and traffic jams with this top-notch city bike.
@@ -53,7 +53,7 @@ export default function GroodKitPage() {
               </div>
 
               {/* Enviolo Image Column */}
-              <div className="relative mr-12">
+              <div className="relative mr-12 contain">
                 <img src="/lek.jpg" alt="Electric Bike" className="w-full" />
               </div>
             </div>

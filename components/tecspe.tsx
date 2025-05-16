@@ -12,7 +12,7 @@ export default function WhatsGroodPage() {
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center space-y-8">
             <h1 className="text-4xl md:text-5xl font-bold">
-              What&apos;s <span className="text-amber-400">Grood</span>?
+              What&apos;s <span className="text-primary">Grood</span>?
             </h1>
             <p className="text-gray-700 text-lg">
               An electric bike is equipped with a motor and a battery. To make
