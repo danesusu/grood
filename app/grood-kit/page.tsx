@@ -64,7 +64,7 @@ export default function GroodKitPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Image first in second row */}
               <div className="relative ml-12 md:order-1">
-                <img src="/brang.JPG" alt="Electric Bike" className="w-full" />
+                <img src="/brang.jpg" alt="Electric Bike" className="w-full" />
               </div>
 
               {/* Text second in second row */}
@@ -169,8 +169,8 @@ export default function GroodKitPage() {
           <div className="max-w-8xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Image first in second row */}
-              <div className="relative ml-12 md:order-1">
-                <img src="/kep.jpg" alt="Electric Bike" className="w-full" />
+              <div className="relative ml-12 mdS:order-1">
+                <img src="/kep.JPG" alt="Electric Bike" className="w-full" />
               </div>
 
               {/* Text second in second row */}
