@@ -57,7 +57,7 @@ export default function WhatsGroodPage() {
           </div>
         </div>
       </section>
-      <section className="bg-gray-50 py-16 md:py-24">
+      <section className="bg-background py-16 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Our Values</h2>
@@ -83,9 +83,12 @@ export default function WhatsGroodPage() {
                   "We invest in the communities where our bikes are used, creating jobs and supporting local initiatives.",
               },
             ].map((value, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
+              <div
+                key={index}
+                className="bg-background p-6 rounded-lg shadow-sm"
+              >
                 <h3 className="text-xl font-semibold mb-3">{value.title}</h3>
-                <p className="text-gray-600">{value.description}</p>
+                <p className="text-foreground">{value.description}</p>
               </div>
             ))}
           </div>

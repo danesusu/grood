@@ -1,14 +1,20 @@
-import { GroodButton } from "@/components/ui/grood-button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { GroodButton } from "@/components/ui/grood-button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export default function ComponentsDemo() {
   return (
     <main className="flex flex-col min-h-screen">
-      <section className="bg-white py-16">
+      <section className="bg-background py-16 font-futura">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-3xl font-bold mb-8">UI Components Demo</h1>
@@ -27,7 +33,9 @@ export default function ComponentsDemo() {
                   </CardHeader>
                   <CardContent className="flex flex-wrap gap-4">
                     <GroodButton variant="primary">Primary Button</GroodButton>
-                    <GroodButton variant="secondary">Secondary Button</GroodButton>
+                    <GroodButton variant="secondary">
+                      Secondary Button
+                    </GroodButton>
                     <GroodButton variant="outline">Outline Button</GroodButton>
                     <GroodButton variant="primary" size="sm">
                       Small Button
@@ -55,7 +63,11 @@ export default function ComponentsDemo() {
 
                     <div className="space-y-2">
                       <Label htmlFor="disabled">Disabled Input</Label>
-                      <Input id="disabled" placeholder="Disabled input" disabled />
+                      <Input
+                        id="disabled"
+                        placeholder="Disabled input"
+                        disabled
+                      />
                     </div>
 
                     <div className="space-y-2">
@@ -82,7 +94,10 @@ export default function ComponentsDemo() {
                       <CardTitle>Basic Card</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p>This is a basic card component with a header and content.</p>
+                      <p>
+                        This is a basic card component with a header and
+                        content.
+                      </p>
                     </CardContent>
                   </Card>
 
@@ -119,5 +134,5 @@ export default function ComponentsDemo() {
         </div>
       </section>
     </main>
-  )
+  );
 }

@@ -1,5 +1,5 @@
-import HomeScreen from "@/components/screens/Home";
+import CapriBikesHomepage from "@/components/screens/Home";
 
-export default function Home() {
-  return HomeScreen();
+export default function WhatsGroodPage() {
+  return <CapriBikesHomepage />;
 }

@@ -1,10 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet');
 
 @layer base {
   :root {
-    --background: 199 100% 96%; /* Light blue background */
+    --background: 206 31% 90%; /* Light blue background */
     --foreground: 210 100% 10%; /* Dark teal text */
 
     --card: 0 0% 100%;

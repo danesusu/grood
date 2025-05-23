@@ -1,31 +1,37 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Checkbox } from "@/components/ui/checkbox"
-import { toast } from "@/components/ui/use-toast"
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Checkbox } from "@/components/ui/checkbox";
+import { toast } from "@/components/ui/use-toast";
 
 export function PreOrderForm() {
-  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault()
-    setIsSubmitting(true)
+    event.preventDefault();
+    setIsSubmitting(true);
 
     // Simulate form submission
     setTimeout(() => {
-      setIsSubmitting(false)
+      setIsSubmitting(false);
       toast({
         title: "Pre-order submitted!",
         description: "We'll contact you soon with more details.",
-      })
-    }, 1500)
-  }
+      });
+    }, 1500);
+  };
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
@@ -36,12 +42,22 @@ export function PreOrderForm() {
 
       <div className="space-y-2">
         <Label htmlFor="email">Email</Label>
-        <Input id="email" type="email" placeholder="Enter your email" required />
+        <Input
+          id="email"
+          type="email"
+          placeholder="Enter your email"
+          required
+        />
       </div>
 
       <div className="space-y-2">
         <Label htmlFor="phone">Phone Number</Label>
-        <Input id="phone" type="tel" placeholder="Enter your phone number" required />
+        <Input
+          id="phone"
+          type="tel"
+          placeholder="Enter your phone number"
+          required
+        />
       </div>
 
       <div className="space-y-2">
@@ -81,11 +97,35 @@ export function PreOrderForm() {
 
       <Button
         type="submit"
-        className="w-full bg-amber-400 hover:bg-amber-500 text-black font-medium"
+        className="w-full bg-primary hover:bg-primary text-black font-medium"
         disabled={isSubmitting}
       >
-        {isSubmitting ? "Processing..." : "Submit Pre-Order"}
+        {isSubmitting ? "Processing..." : "Submit To Order"}
       </Button>
+      <Button
+        type="button"
+        onClick={() => {
+          setIsSubmitting(true);
+          setTimeout(() => {
+            setIsSubmitting(false);
+            toast({
+              title: "Message sent!",
+              description: "We'll get back to you soon.",
+            });
+          }, 1500);
+        }}
+        className="w-full bg-secondary hover:bg-secondary font-medium text-white"
+        disabled={isSubmitting}
+      >
+        {isSubmitting ? "Processing..." : "Send Message"}
+      </Button>
+      <div className="flex flex-col items-center">
+        <img
+          src="/telegram.png"
+          alt="Customer Care"
+          className="w-24 h-24 text-primary"
+        />
+      </div>
     </form>
-  )
+  );
 }
