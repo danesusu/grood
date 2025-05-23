@@ -15,7 +15,7 @@ export default function GroodKitPage() {
             <h1 className="text-4xl md:text-5xl font-bold">
               The <span className="text-primary">Grood</span> Kit
             </h1>
-            <p className="text-foreground text-lg">
+            <p className="text-foreground text-xl">
               Hit the streets and traffic jams with this top-notch city bike.
               Phnom Penh front and rear alloy brakes, a Shimano 6-speed
               drivetrain, and RevoShift grip shifters for safety, precision, and

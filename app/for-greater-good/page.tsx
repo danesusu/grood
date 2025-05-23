@@ -8,7 +8,7 @@ export default function ForGreaterGoodPage() {
       <h1 className="text-4xl font-bold">
         Why's <span className="text-primary"> Grood?</span>
       </h1>
-      <p className="text-foreground mt-4 max-w-2xl mx-auto">
+      <p className="text-foreground mt-4 max-w-2xl mx-auto text-lg">
         Grood bikes can effortlessly reach a speed of 32km/h, easily climb the
         coast or make trips that would be too long to travel with a conventional
         bike.
