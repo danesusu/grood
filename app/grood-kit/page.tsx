@@ -166,7 +166,7 @@ export default function GroodKitPage() {
 
               {/* Enviolo Image Column */}
               <div className="relative mr-12">
-                <img src="/lek.jpg" alt="Electric Bike" className="w-full" />
+                <img src="/lek.JPG" alt="Electric Bike" className="w-full" />
               </div>
             </div>
           </div>
